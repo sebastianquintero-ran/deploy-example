@@ -17,7 +17,7 @@ resource "aws_codepipeline" "cicd_pipeline" {
       version          = "1"
       output_artifacts = ["code"]
       configuration = {
-        RepositoryName       = "repo-for-terraform"
+        RepositoryName       = "wiki-automation-ui-1"
         BranchName           = "master"
         OutputArtifactFormat = "CODE_ZIP"
       }
